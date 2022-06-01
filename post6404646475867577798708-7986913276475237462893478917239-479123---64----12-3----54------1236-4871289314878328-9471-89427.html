@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>OTR Admin - Posts</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        <!-- Favicon -->
+        <link href="./img/favicon.png" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/eec7b83aed.js" crossorigin="anonymous"></script>
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar p-0">
+        <div class="container-lg p-0">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo-fluid" src="./otrLogo.svg" alt="Image">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <!-- <a href="./team.html" class="nav-item nav-link">Instructions</a> -->
+                        <a href="./post6404646475867577798708-7986913276475237462893478917239-479123---64----12-3----54------1236-4871289314878328-9471-89427.html" class="nav-item nav-link active">Post/Edit</a>
+                        <a href="./index.html" class="nav-item nav-link">View</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header-admin d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
+        <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Edit Database Elements</h1>
+        <div class="d-inline-flex text-white">
+            <p class="m-0">This page can be used to create new posts, edit existing posts, delete posts, and update the latest instagram post onto the main website.</p>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container border p-3 mb-5">
+            <div class="text-center">
+                <h1 class="mt-2 mb-5">Create new Post</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form class="add">
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" name="title" required placeholder="Title">
+                            </div><br>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" name="author" required placeholder="Author">
+                            </div><br>
+                            <div class="control-group">
+                                <textarea name ="content" class="form-control" rows="5" placeholder="Post Contents" required></textarea>
+                            </div><br>
+                            <div class="control-group">
+                                <textarea name ="images" class="form-control" rows="3" placeholder="Image Links"></textarea>
+                            </div><br>
+                            <div class="text-center">
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit">Add post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border p-3 mb-5">
+            <div class="text-center">
+                <h1 class="mt-2 mb-5">Update a Post</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form class="pull">
+                            <div class="control-group text-center">
+                                <input type="text" class="form-control p-4" name="id" required placeholder="Enter ID of post to pull data"><br>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit">Pull post data</button>
+                            </div><br>
+                        </form>
+                    </div>
+                    <div class="contact-form">
+                        <form class="update">
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" name="id" required placeholder="Post ID">
+                            </div><br>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" name="title" required placeholder="Title">
+                            </div><br>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" name="author" required placeholder="Author">
+                            </div><br>
+                            <div class="control-group">
+                                <textarea name ="content" class="form-control" rows="5" placeholder="Post Contents" required></textarea>
+                            </div><br>
+                            <div class="control-group">
+                                <textarea name ="images" class="form-control" rows="3" placeholder="Image Links"></textarea>
+                            </div><br>
+                            <div class="text-center">
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit">Update Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border p-3 mb-5">
+            <div class="text-center">
+                <h1 class="mt-2 mb-5">Delete a Post (NON-RECOVERABLE)</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form class="delete">
+                            <div class="control-group text-center">
+                                <input type="text" class="form-control p-4" name="id" required placeholder="Enter ID of post to delete"><br>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit">Delete Post</button>
+                            </div><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border p-3 mb-5">
+            <div class="text-center">
+                <h1 class="mt-2 mb-5">Update Latest Instagram Post</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form class="update_ig">
+                            <div class="control-group text-center">
+                                <input type="text" class="form-control p-4" name="link" required placeholder="Copy paste link as per instructions"><br>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit">Update latest IG post</button><br>
+                            </div><br>
+                        </form>
+                        <iframe id="ig_post" style="border-radius: 5px;" width="100%"height="650" scrolling = "yes" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <div class="container-fluid py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center">
+            &copy; <a class="font-weight-semi-bold" href="./index.html">Ontario Tech Racing</a>. All Rights Reserved.
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/post.js"></script>
+</body>
+
+</html>
